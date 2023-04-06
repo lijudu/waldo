@@ -1,11 +1,8 @@
 interface Target {
-
     name: string;
     xCoord: number;
     yCoord: number; 
     found: boolean; 
-    // if want optional, put '?' after (eg: 'found?')
-    // if want either number or string, use '|' (eg: name: string | number)
 }
 
 const prisoner: Target = {
