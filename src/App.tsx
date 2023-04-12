@@ -1,12 +1,14 @@
 import React, { FC } from 'react';
-
-
+import { Navbar } from './Components/Navbar';
+import { GameImage } from './Components/GameImage';
 
 
 const App: FC = () => {
+
   return (
-    <div className='text-3xl bg-background-image bg-cover h-screen'>
-      hello
+    <div>
+      <Navbar/>
+      <GameImage/>
     </div>
   );
 }
