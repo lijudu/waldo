@@ -32,9 +32,12 @@ export function GameImage () {
         <div className='bg-background-image bg-auto  h-[92rem] w-full bg-center bg-no-repeat'
               onClick={getLocation}/>
         {showCharacters && (
-          <div className='z-10 absolute  text-3xl text-red-200' 
+          <div className='z-20 absolute  text-3xl text-red-200' 
             style={{top: `${target[1]}px`, left: `${target[0]}px`}}>
-            <Characters/>
+              <ul>
+                <li className='rounded-full border-green-500 border-4 h-20 w-20 right-9 bottom-9 relative'></li>
+                <li className='right-10 bottom-8 relative'><Characters/></li>
+              </ul>
           </div>
         )}
     </div>
